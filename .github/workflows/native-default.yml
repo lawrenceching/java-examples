@@ -27,7 +27,7 @@ jobs:
         java-version: '17'
         components: 'native-image'
     - name: Build with Maven
-      run: mvn -B package
+      run: mvn -B package -f native/pom.xml -Pnative
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     # This didn't work! : (
